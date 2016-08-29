@@ -36,7 +36,7 @@ aebs=aebs(id);
 if length(aebs)==0
   outlierv=255;
 else
-  outlierv=Removeoutlier(aebs);
+  outlierv=remove_outlier(aebs);
 end
 id=ebs>outlierv;
 ebs(id)=-1;
